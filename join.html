@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us - HARMONY Music Club</title>
+</head>
+
+<body>
+
+    <header>
+        <p>HARMONY</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="intro">
+            <h1>Join HARMONY</h1>
+            <p>
+                Become a member of our music club
+                and share your passion with us.
+            </p>
+        </section>
+
+        <section id="membership">
+            <h2>Membership Form</h2>
+
+            <form id="join-form">
+
+                <div>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname"
+                           placeholder="Enter your full name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter your phone number" required>
+                </div>
+
+                <div>
+                    <label for="activity">Choose Your Activity:</label>
+                    <select id="activity" name="activity" required>
+                        <option value="">Select an activity</option>
+                        <option value="instrument">Instrument Lessons</option>
+                        <option value="singing">Singing</option>
+                        <option value="workshops">Music Workshops</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Why do you want to join HARMONY?</label>
+                    <textarea id="message" name="message"
+                              rows="5"
+                              placeholder="Write your message..."></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="conditions" name="conditions" required>
+                    <label for="conditions">
+                        I agree to join HARMONY Music Club.
+                    </label>
+                </div>
+
+                <button type="submit">Submit Application</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HARMONY Music Club. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
