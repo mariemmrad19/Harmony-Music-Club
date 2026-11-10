@@ -1,154 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Join Us - HARMONY Music Club</title>
-
+    <title>Nous rejoindre - Club de Musique HARMONY</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <header>
-        <p>HARMONY</p>
-
+        <a href="index.html" class="logo">HARMONY</a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="join.html">Join Us</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="activities.html">Activités</a></li>
+                <li><a href="events.html">Événements</a></li>
+                <li><a href="join.html">Nous rejoindre</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-
         <section id="intro">
-
-            <h1>Join HARMONY</h1>
-
+            <p class="section-label">FAITES PARTIE DE NOTRE COMMUNAUTÉ</p>
+            <h1>Rejoignez HARMONY</h1>
             <p>
-                Become a member of our music club.
-                Share your passion, discover new talents
-                and enjoy making music together.
+                Votre aventure musicale commence ici.
+                Découvrez vos talents, rencontrez d'autres passionnés de musique
+                et prenez plaisir à créer de la musique ensemble.
             </p>
-            <img src="images/join-music.jpg" alt="Musical instruments in a music studio" width="100%" >
-
+            <img src="images/join-music.jpg" alt="Instruments de musique dans un studio">
         </section>
-
-
         <section id="join-form-section">
-
-            <h2>Membership Registration</h2>
-
+            <p class="section-label">FAITES LE PREMIER PAS</p>
+            <h2>Inscription des membres</h2>
             <p>
-                Complete the form below to apply
-                for membership in HARMONY Music Club.
+                Parlez-nous de vous, de vos intérêts musicaux
+                et de ce que vous aimeriez découvrir chez HARMONY.
             </p>
-
             <form id="join-form">
-
+                <h3>1. Informations personnelles</h3>
                 <div>
-                    <label for="fullname">Full Name</label>
+                    <label for="fullname">Nom et prénom</label>
                     <input
                         type="text"
                         id="fullname"
                         name="fullname"
-                        placeholder="Enter your full name"
+                        placeholder="Entrez votre nom et prénom"
                         required>
                 </div>
-
                 <div>
-                    <label for="email">Email Address</label>
+                    <label for="email">Adresse e-mail</label>
                     <input
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="example@email.com"
+                        placeholder="exemple@email.com"
                         required>
                 </div>
-
                 <div>
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">Numéro de téléphone (facultatif)</label>
                     <input
                         type="tel"
                         id="phone"
                         name="phone"
-                        placeholder="Enter your phone number"
-                        required>
+                        placeholder="Entrez votre numéro de téléphone">
                 </div>
-
                 <div>
-                    <label for="activity">Choose Your Activity</label>
-
-                    <select id="activity" name="activity" required>
-
-                        <option value="">Select an activity</option>
-                        <option value="Instrument Lessons">Instrument Lessons</option>
-                        <option value="Singing">Singing</option>
-                        <option value="Music Theory">Music Theory</option>
-                        <option value="Choir">Choir</option>
-                        <option value="Music Workshops">Music Workshops</option>
-
+                    <label for="age">Tranche d'âge</label>
+                    <select id="age" name="age" required>
+                        <option value="">Choisissez votre tranche d'âge</option>
+                        <option value="Under 18">Moins de 18 ans</option>
+                        <option value="18-25">18-25 ans</option>
+                        <option value="26-35">26-35 ans</option>
+                        <option value="Over 35">Plus de 35 ans</option>
                     </select>
                 </div>
-
+                <h3>2. Vos intérêts musicaux</h3>
+                <p>Quelles activités souhaitez-vous rejoindre ? Vous pouvez choisir plusieurs réponses.</p>
+                <div class="choice-group">
+                    <label>
+                        <input type="checkbox" name="activities" value="Instrument Lessons">
+                        Cours d'instruments
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Solo Singing">
+                        Chant en solo
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Choir">
+                        Chorale
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Music Theory">
+                        Théorie musicale
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Music Workshops">
+                        Ateliers musicaux
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Group Practice">
+                        Pratique en groupe
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Live Performances">
+                        Spectacles en direct
+                    </label>
+                </div>
                 <div>
-                    <label for="experience">Musical Experience</label>
-
+                    <label for="instrument">
+                        Quel instrument vous intéresse ?
+                    </label>
+                    <select id="instrument" name="instrument">
+                        <option value="">Choisissez un instrument</option>
+                        <option value="Piano">Piano</option>
+                        <option value="Violin">Violon</option>
+                        <option value="Guitar">Guitare</option>
+                        <option value="Drums">Batterie</option>
+                        <option value="Flute">Flûte</option>
+                        <option value="Other">Autre</option>
+                        <option value="No Instrument">Je ne suis pas intéressé(e) par un instrument</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="other-instrument">
+                        Si vous avez choisi « Autre », précisez l'instrument.
+                    </label>
+                    <input
+                        type="text"
+                        id="other-instrument"
+                        name="other-instrument"
+                        placeholder="Entrez le nom de l'instrument">
+                </div>
+                <h3>3. Votre expérience musicale</h3>
+                <div>
+                    <label for="experience">Quel est votre niveau musical ?</label>
                     <select id="experience" name="experience" required>
-
-                        <option value="">Select your experience</option>
-                        <option value="Beginner">Beginner</option>
-                        <option value="Intermediate">Intermediate</option>
-                        <option value="Advanced">Advanced</option>
-
+                        <option value="">Choisissez votre niveau</option>
+                        <option value="Beginner">Débutant</option>
+                        <option value="Intermediate">Intermédiaire</option>
+                        <option value="Advanced">Avancé</option>
                     </select>
                 </div>
-
                 <div>
-                    <label for="reason">Why do you want to join HARMONY?</label>
+                    <label for="years">Depuis combien de temps pratiquez-vous la musique ?</label>
+                    <select id="years" name="years">
+                        <option value="">Choisissez une réponse</option>
+                        <option value="I have never practised">Je n'ai jamais pratiqué</option>
+                        <option value="Less than one year">Moins d'un an</option>
+                        <option value="1 to 3 years">De 1 à 3 ans</option>
+                        <option value="More than 3 years">Plus de 3 ans</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="participation">Comment souhaitez-vous participer ?</label>
 
+                    <select id="participation" name="participation">
+                        <option value="">Choisissez votre préférence</option>
+                        <option value="Individual Activities">Activités individuelles</option>
+                        <option value="Group Activities">Activités en groupe</option>
+                        <option value="Both">Les deux</option>
+                    </select>
+                </div>
+                <h3>4. Vos objectifs et préférences</h3>
+                <div>
+                    <label for="goal">Que souhaitez-vous accomplir chez HARMONY ?</label>
+                    <select id="goal" name="goal">
+                        <option value="">Choisissez votre objectif principal</option>
+                        <option value="Learn a new instrument">Apprendre à jouer d'un nouvel instrument</option>
+                        <option value="Improve my musical skills">Améliorer mes compétences musicales</option>
+                        <option value="Develop my singing voice">Développer ma voix</option>
+                        <option value="Meet other musicians">Rencontrer d'autres musiciens</option>
+                        <option value="Perform on stage">Monter sur scène</option>
+                        <option value="Discover music">Découvrir la musique</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="availability">Quand êtes-vous généralement disponible ?</label>
+                    <select id="availability" name="availability">
+                        <option value="">Choisissez vos disponibilités</option>
+                        <option value="Weekday mornings">Les matins en semaine</option>
+                        <option value="Weekday afternoons">Les après-midis en semaine</option>
+                        <option value="Weekday evenings">Les soirées en semaine</option>
+                        <option value="Weekends">Les week-ends</option>
+                        <option value="Flexible">Flexible</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="events">Souhaitez-vous participer aux événements du club ?</label>
+                    <select id="events" name="events">
+                        <option value="">Choisissez une réponse</option>
+                        <option value="Yes">Oui, absolument !</option>
+                        <option value="Maybe">Peut-être, j'aimerais essayer.</option>
+                        <option value="Not now">Pas pour le moment.</option>
+                    </select>
+                </div>
+                <h3>5. Parlez-nous davantage de vous</h3>
+                <div>
+                    <label for="reason">Pourquoi souhaitez-vous rejoindre HARMONY ?</label>
                     <textarea
                         id="reason"
                         name="reason"
                         rows="5"
-                        placeholder="Tell us about your passion for music..."
+                        placeholder="Parlez-nous de votre passion pour la musique et de votre motivation..."
                         required></textarea>
                 </div>
-
                 <div>
+                    <label for="suggestions">
+                        Avez-vous des idées ou des suggestions pour le club ?
+                    </label>
+                    <textarea
+                        id="suggestions"
+                        name="suggestions"
+                        rows="4"
+                        placeholder="Partagez vos idées avec nous..."></textarea>
+                </div>
+                <div class="agreement">
                     <input
                         type="checkbox"
                         id="agreement"
                         name="agreement"
                         required>
-
                     <label for="agreement">
-                        I agree to the club membership conditions.
+                        Je confirme que les informations fournies sont exactes.
                     </label>
                 </div>
-
-                <button type="submit">Submit Application</button>
-
+                <button type="submit">Envoyer ma candidature</button>
                 <p id="form-message"></p>
-
             </form>
-
         </section>
-
     </main>
-
     <footer>
-
-        <p>&copy; 2026 HARMONY Music Club. All rights reserved.</p>
-
+        <p>&copy; 2026 HARMONY Club de Musique. Tous droits réservés.</p>
     </footer>
-
 </body>
-
 </html>

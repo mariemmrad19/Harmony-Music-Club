@@ -1,90 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HARMONY - Music Club</title>
+    <title>HARMONY - Club de Musique</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <p>HARMONY</p>
+        <a href="index.html" class="logo">HARMONY</a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="join.html">Join Us</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="activities.html">Activités</a></li>
+                <li><a href="events.html">Événements</a></li>
+                <li><a href="join.html">Nous rejoindre</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="hero">
             <div class="hero-content">
-                <h1>Feel the Music</h1>
+                <p class="hero-label">BIENVENUE CHEZ HARMONY</p>
+                <h1>La musique nous rassemble</h1>
                 <p>
-                    Join HARMONY Music Club and be part
-                    of our musical family.
+                    Découvrez votre talent, apprenez de nouvelles compétences,
+                    rencontrez des passionnés et vivez
+                    la joie de faire de la musique ensemble.
                 </p>
-                <a href="activities.html">Explore More</a>
+                <div class="hero-buttons">
+                    <a href="activities.html">Découvrir nos activités</a>
+                    <a href="join.html">Rejoindre notre club</a>
+                </div>
             </div>
-            <img src="images/hero.jpg" alt="Musician playing violin on stage">
+            <div class="hero-image">
+                <img src="images/hero.jpg"
+                     alt="Musicien jouant du violon sur scène">
+            </div>
+        </section>
+        <section id="about">
+            <p class="section-label">QUI SOMMES-NOUS ?</p>
+            <h2>Bien plus qu'un simple club de musique</h2>
+            <p>
+                HARMONY est un lieu où les passionnés de musique
+                se réunissent pour apprendre, créer et partager leur passion.
+                Que vous soyez débutant ou que vous ayez déjà
+                une expérience musicale, vous trouverez votre place ici.
+            </p>
+            <div class="about-cards">
+                <article>
+                    <h3>Apprendre</h3>
+                    <p>
+                        Découvrez les instruments, développez votre voix
+                        et améliorez vos connaissances musicales.
+                    </p>
+                </article>
+                <article>
+                    <h3>Créer</h3>
+                    <p>
+                        Participez à des ateliers, explorez de nouvelles idées
+                        et exprimez votre créativité.
+                    </p>
+                </article>
+                <article>
+                    <h3>Partager</h3>
+                    <p>
+                        Rencontrez d'autres passionnés de musique
+                        et profitez de moments inoubliables ensemble.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="music-video">
+            <div class="video-content">
+                <p class="section-label">RESSENTEZ LE RYTHME</p>
+                <h2>Vivez la musique ensemble</h2>
+                <p>
+                    La musique est encore plus belle lorsqu'on la partage.
+                    Découvrez l'ambiance de nos répétitions,
+                    de nos spectacles et de nos activités musicales.
+                </p>
+            </div>
+            <video controls poster="images/hero.jpg">
+                <source src="videos/harmony-performance.mp4"
+                        type="video/mp4">
+                Votre navigateur ne prend pas en charge la lecture vidéo.
+            </video>
+        </section>
+        <section id="audio-testimonials">
+            <p class="section-label">DES TÉMOIGNAGES AUTHENTIQUES</p>
+            <h2>Découvrez leurs témoignages</h2>
+            <p>
+                Découvrez ce que nos membres pensent de HARMONY
+                et comment la musique a marqué leur parcours.
+            </p>
+            <div class="audio-container">
+                <article>
+                    <h3>Mon expérience chez HARMONY</h3>
+                    <p>
+                        Découvrez comment rejoindre le club m'a aidé
+                        à développer mes compétences musicales.
+                    </p>
+                    <audio controls>
+                        <source src="audio/member1.mp3" type="audio/mpeg">
+                        Votre navigateur ne prend pas en charge la lecture audio.
+                    </audio>
+                </article>
+                <article>
+                    <h3>Ce que j'ai appris</h3>
+                    <p>
+                        Écoutez mon expérience avec les cours de musique
+                        et les activités de groupe.
+                    </p>
+                    <audio controls>
+                        <source src="audio/member2.mp3" type="audio/mpeg">
+                        Votre navigateur ne prend pas en charge la lecture audio.
+                    </audio>
+                </article>
+                <article>
+                    <h3>Pourquoi nous rejoindre ?</h3>
+                    <p>
+                        Découvrez pourquoi faire partie de HARMONY
+                        est une merveilleuse expérience musicale.
+                    </p>
+                    <audio controls>
+                        <source src="audio/member3.mp3" type="audio/mpeg">
+                        Votre navigateur ne prend pas en charge la lecture audio.
+                    </audio>
+                </article>
+            </div>
         </section>
         <section id="home-activities">
-            <h2>Our Activities</h2>
+            <p class="section-label">EXPLOREZ VOTRE PASSION</p>
+            <h2>Découvrez nos activités</h2>
+            <p>
+                Quels que soient vos goûts musicaux,
+                une activité vous attend chez HARMONY.
+            </p>
             <div class="activities-container">
                 <article>
-                    <img src="images/piano.jpg" alt="Piano">
-                    <h3>Music Lessons</h3>
+                    <img src="images/piano.jpg" alt="Cours de piano">
+                    <h3>Cours d'instruments</h3>
                     <p>
-                        Learn to play instruments
-                        with our club members.
+                        Apprenez à jouer d'instruments tels que le piano,
+                        le violon et la guitare.
                     </p>
-                    <a href="activities.html">Discover More</a>
+                    <a href="activities.html">En savoir plus</a>
                 </article>
                 <article>
-                    <img src="images/singing.jpg" alt="Singer performing">
-                    <h3>Singing</h3>
+                    <img src="images/singing.jpg" alt="Chanteur en pleine prestation">
+                    <h3>Chant</h3>
                     <p>
-                        Express your voice
-                        and share your passion.
+                        Développez votre voix et prenez plaisir à chanter
+                        seul ou en groupe.
                     </p>
-                    <a href="activities.html">Discover More</a>
+                    <a href="activities.html">En savoir plus</a>
                 </article>
                 <article>
-                    <img src="images/workshop.jpg" alt="Music workshop">
-                    <h3>Music Workshops</h3>
+                    <img src="images/workshop.jpg" alt="Atelier de musique">
+                    <h3>Ateliers musicaux</h3>
                     <p>
-                        Explore your creativity
-                        through musical activities.
+                        Explorez la créativité, le rythme
+                        et la collaboration musicale.
                     </p>
-                    <a href="activities.html">Discover More</a>
+                    <a href="activities.html">En savoir plus</a>
                 </article>
             </div>
         </section>
         <section id="home-events">
             <div>
-                <h2>Upcoming Events</h2>
-                <h3>Music Night</h3>
+                <p class="section-label">NOTEZ LA DATE</p>
+                <h2>La musique nous rassemble</h2>
+                <h3>Découvrez nos événements</h3>
                 <p>
-                    Enjoy an unforgettable evening
-                    filled with music and performances.
+                    Des spectacles aux ateliers créatifs,
+                    chaque événement est une nouvelle occasion d'apprendre,
+                    de partager et de profiter de la musique.
                 </p>
-                <a href="events.html">Learn More</a>
+                <a href="events.html">Découvrir nos événements</a>
             </div>
-            <img src="images/concert.jpg" alt="Music concert">
+            <img src="images/concert.jpg"
+                 alt="Musiciens en concert">
+
         </section>
         <section id="home-join">
-            <h2>Join Our Club</h2>
+            <p class="section-label">VOTRE AVENTURE MUSICALE COMMENCE ICI</p>
+            <h2>Prêt à faire partie de HARMONY ?</h2>
             <p>
-                Be part of HARMONY and share
-                your love for music.
+                Vous n'avez pas besoin d'être un musicien professionnel.
+                Tout ce dont vous avez besoin, c'est de curiosité
+                et d'une passion pour la musique.
             </p>
-            <a href="join.html">Join Now</a>
+            <a href="join.html">Rejoindre notre club</a>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 HARMONY Music Club. All rights reserved.</p>
+        <p>&copy; 2026 HARMONY Club de Musique. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
