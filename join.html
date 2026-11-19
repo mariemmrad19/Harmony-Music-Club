@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nous rejoindre - Club de Musique HARMONY</title>
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">HARMONY</a>
+        <a href="index.html" class="logo">HARMONY</a> 
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -120,19 +121,14 @@
                         <option value="Other">Autre</option>
                         <option value="No Instrument">Je ne suis pas intéressé(e) par un instrument</option>
                     </select>
-                </div>
-                <div>
-                    <label for="other-instrument">
-                        Si vous avez choisi « Autre », précisez l'instrument.
-                    </label>
-                    <input
-                        type="text"
-                        id="other-instrument"
-                        name="other-instrument"
-                        placeholder="Entrez le nom de l'instrument">
-                </div>
-                <h3>3. Votre expérience musicale</h3>
-                <div>
+                 </div>
+                 <div id="autre-div" hidden>
+                 <label for="other-instrument">Si vous avez choisi « Autre », preciser l'instrument.</label>
+                  <input type="text" id="other-instrument" name="other-instrument" placeholder="Entrez le nom de l'instrument">
+                  </div>
+                    
+                 <h3>3. Votre expérience musicale</h3>
+                 <div>
                     <label for="experience">Quel est votre niveau musical ?</label>
                     <select id="experience" name="experience" required>
                         <option value="">Choisissez votre niveau</option>
@@ -227,10 +223,12 @@
                 <button type="submit">Envoyer ma candidature</button>
                 <p id="form-message"></p>
             </form>
+            
         </section>
     </main>
     <footer>
         <p>&copy; 2026 HARMONY Club de Musique. Tous droits réservés.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

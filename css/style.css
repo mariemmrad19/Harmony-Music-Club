@@ -605,3 +605,45 @@ footer {
         text-align: center;
     }
 }
+.filtres {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#countdown {
+    color: var(--purple-light);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.filtre-btn,
+.btn-jaime {
+    padding: 10px 20px;
+    border: 1px solid var(--purple);
+    background: transparent;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.filtre-btn.actif,
+.btn-jaime.actif {
+    background: var(--purple);
+    color: white;
+}
+#join-form input.invalide,
+#join-form select.invalide,
+#join-form textarea.invalide {
+    border: 2px solid #ff6b6b;
+    background: rgba(255, 107, 107, 0.08);
+}
+
+#join-form input.valide,
+#join-form select.valide,
+#join-form textarea.valide {
+    border: 2px solid #4ecb71;
+}

@@ -31,8 +31,16 @@
         <section id="upcoming-events">
             <p class="section-label">NOTEZ LA DATE</p>
             <h2>Événements à venir</h2>
+            <p id="countdown"></p>
+
+<div class="filtres">
+  <button class="filtre-btn actif" data-filtre="tous">Tous</button>
+  <button class="filtre-btn" data-filtre="Concert">Concert</button>
+  <button class="filtre-btn" data-filtre="Chant">Chant</button>
+  <button class="filtre-btn" data-filtre="Atelier">Atelier</button>
+</div>
             <div class="events-container">
-                <article>
+                <article data-categorie="Concert">
                     <img src="images/music-night.jpg" alt="Concert de musique en direct">
                     <h3>Soirée musicale</h3>
                     <p>
@@ -46,7 +54,7 @@
                     <p><strong>Catégorie :</strong> Concert</p>
                     <a href="join.html">Participer</a>
                 </article>
-                <article>
+                <article data-categorie="Chant">
                     <img src="images/open-mic.jpg" alt="Chanteur en pleine prestation">
                     <h3>Scène ouverte</h3>
                     <p>
@@ -59,7 +67,7 @@
                     <p><strong>Catégorie :</strong> Chant</p>
                     <a href="join.html">Participer</a>
                 </article>
-                <article>
+                <article data-categorie="Atelier">
                     <img src="images/workshop-day.jpg" alt="Atelier de musique">
                     <h3>Journée d'ateliers musicaux</h3>
                     <p>
@@ -98,5 +106,6 @@
     <footer>
         <p>&copy; 2026 HARMONY Club de Musique. Tous droits réservés.</p>
     </footer>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
