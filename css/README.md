@@ -19,7 +19,7 @@ js/script.js
 images/ / audio/ / videos/
 ## Comment ouvrir le site
 Ouvrir index.html dans le navigateur.
-Ou en ligne : https://mariemmrad19.github.io/harmony/
+Ou en ligne : https://mariemmrad19.github.io/Harmony-Music-Club/
 ## Membre
 Mariem Mrad - IT 17 - Groupe 2
 GitHub : https://github.com/mariemmrad19
