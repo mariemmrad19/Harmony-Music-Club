@@ -8,7 +8,7 @@ Ce projet a été réalisé dans le cadre d'un atelier de développement web.
 
 ## Voir le site en ligne
 
-[Ouvrir le site HARMONY](https://mariemmrad19.github.io/Harmony-Music-Club/)
+[Ouvrir le site HARMONY](https://github.com/mariemmrad19/Harmony-Music-Club)
 
 ## Voir le code index.html
 
