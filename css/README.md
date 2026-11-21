@@ -1,17 +1,17 @@
 # HARMONY - Club de Musique
-Mini-projet Dev Web cote client - TI1 - Semestre 1 - A.U. 2026/2027
+Mini-projet Dev Web côté client - TI1 - Semestre 1 - A.U. 2026/2027
 Enseignante : Dr. Ing. Salma DAOUD
-## Theme
-Site d'un club de musique : decouvrir les activites, les evenements et rejoindre le club.
+## Thème
+Site d'un club de musique : découvrir les activités, les événements et rejoindre le club.
 ## Pages
 - index.html : Accueil
-- activities.html : Activites
-- events.html : Evenements
+- activities.html : Activités
+- events.html : Événements
 - join.html : Nous rejoindre (formulaire)
 ## Technologies
-- HTML5 semantique (header, nav, main, section, article, footer)
+- HTML5 sémantique (header, nav, main, section, article, footer)
 - CSS3 : fichier externe, variables CSS, Grid, Flexbox, media queries
-- JavaScript : fichier externe, DOM, evenements, validation de formulaire, filtre, compteur, menu burger
+- JavaScript : fichier externe, DOM, événements, validation de formulaire, filtre, compteur, menu burger
 ## Structure
 index.html / activities.html / events.html / join.html
 css/style.css
