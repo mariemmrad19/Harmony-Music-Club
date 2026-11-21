@@ -36,7 +36,7 @@ Harmony-Music-Club/
 └── videos/
 ## 6. Comment ouvrir le site
 Ouvrir `index.html` dans le navigateur.
-Ou en ligne : https://github.com/mariemmrad19/Harmony-Music-Club/blob/main/index.html
+Ou en ligne : https://mariemmrad19.github.io/Harmony-Music-Club/
 ## 7. Membre
 Mariem Mrad - IT 17 - Groupe 2
 GitHub : https://github.com/mariemmrad19
