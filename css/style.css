@@ -32,10 +32,7 @@ img {
     max-width: 100%;
     object-fit: cover;
 }
-button,
-input,
-select,
-textarea {
+button,input,select,textarea {
     font: inherit;
 }
 header {
@@ -100,9 +97,7 @@ section {
     text-transform: uppercase;
     margin-bottom: 16px;
 }
-h1,
-h2,
-h3 {
+h1,h2,h3 {
     font-family: 'Space Grotesk', sans-serif;
     line-height: 1.2;
 }
@@ -118,12 +113,7 @@ h3 {
     font-size: 21px;
     margin-bottom: 12px;
 }
-.hero-buttons a,
-#home-events a,
-#home-join a,
-#join a,
-.events-container article a,
-.activities-container article a {
+.hero-buttons a,#home-events a,#home-join a,#join a,.events-container article a,.activities-container article a {
     display: inline-block;
     padding: 14px 25px;
     background: var(--purple);
@@ -132,12 +122,7 @@ h3 {
     font-weight: 700;
     transition: 0.3s;
 }
-.hero-buttons a:hover,
-#home-events a:hover,
-#home-join a:hover,
-#join a:hover,
-.events-container article a:hover,
-.activities-container article a:hover {
+.hero-buttons a:hover,#home-events a:hover,#home-join a:hover,#join a:hover,.events-container article a:hover,.activities-container article a:hover {
     background: var(--purple-light);
     color: var(--black);
     transform: translateY(-4px);
@@ -276,16 +261,10 @@ h3 {
 .audio-container audio {
     width: 100%;
 }
-#home-activities,
-#lessons,
-#singing,
-#workshops {
+#home-activities,#lessons,#singing,#workshops {
     text-align: center;
 }
-#home-activities > p:not(.section-label),
-#lessons > p:not(.section-label),
-#singing > p:not(.section-label),
-#workshops > p:not(.section-label) {
+#home-activities > p:not(.section-label),#lessons > p:not(.section-label),#singing > p:not(.section-label),#workshops > p:not(.section-label) {
     margin: 0 auto;
 }
 .activities-container {
@@ -295,9 +274,7 @@ h3 {
     margin-top: 45px;
     text-align: left;
 }
-#lessons .activities-container,
-#singing .activities-container,
-#workshops .activities-container {
+#lessons .activities-container,#singing .activities-container,#workshops .activities-container {
     grid-template-columns: repeat(2, 1fr);
 }
 .activities-container article {
@@ -320,9 +297,7 @@ h3 {
 .activities-container article:hover img {
     transform: scale(1.04);
 }
-.activities-container h3,
-.activities-container article p,
-.activities-container article a {
+.activities-container h3,.activities-container article p,.activities-container article a {
     margin-left: 24px;
     margin-right: 24px;
 }
@@ -382,8 +357,7 @@ h3 {
     width: 100%;
     height: 220px;
 }
-.events-container h3,
-.events-container article p {
+.events-container h3,.events-container article p {
     margin-left: 23px;
     margin-right: 23px;
 }
@@ -409,8 +383,7 @@ h3 {
     max-height: 450px;
     border-radius: 16px;
 }
-#home-join,
-#join {
+#home-join,#join {
     text-align: center;
     background:
         radial-gradient(circle at center, rgba(155, 92, 255, 0.2), transparent 65%),
@@ -465,9 +438,7 @@ h3 {
     font-weight: 600;
     margin-bottom: 9px;
 }
-#join-form input:not([type="checkbox"]),
-#join-form select,
-#join-form textarea {
+#join-form input:not([type="checkbox"]),#join-form select,#join-form textarea {
     width: 100%;
     padding: 14px;
     border-radius: 8px;
@@ -476,9 +447,7 @@ h3 {
     color: var(--white);
     outline: none;
 }
-#join-form input:focus,
-#join-form select:focus,
-#join-form textarea:focus {
+#join-form input:focus,#join-form select:focus,#join-form textarea:focus {
     border-color: var(--purple);
     box-shadow: 0 0 0 3px rgba(155, 92, 255, 0.12);
 }
@@ -490,8 +459,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
-#join-form .choice-group label,
-#join-form .agreement label {
+#join-form .choice-group label,#join-form .agreement label {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -534,31 +502,25 @@ footer {
         opacity: 0;
         transform: translateY(25px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-.hero-content,
-.hero-image {
+.hero-content,.hero-image {
     animation: fadeUp 0.9s ease both;
 }
 .hero-image {
     animation-delay: 0.2s;
 }
 @media (max-width: 900px) {
-    #hero,
-    #music-video,
-    #home-events {
+    #hero,#music-video,#home-events {
         grid-template-columns: 1fr;
     }
     .hero-image img {
         height: 350px;
     }
-    .about-cards,
-    .audio-container,
-    .events-container {
+    .about-cards,.audio-container,.events-container {
         grid-template-columns: repeat(2, 1fr);
     }
     .activities-container {
@@ -583,13 +545,7 @@ footer {
     section {
         padding: 65px 6%;
     }
-    .about-cards,
-    .audio-container,
-    .activities-container,
-    .events-container,
-    #lessons .activities-container,
-    #singing .activities-container,
-    #workshops .activities-container {
+    .about-cards,.audio-container,.activities-container,.events-container,#lessons .activities-container,#singing .activities-container,#workshops .activities-container {
         grid-template-columns: 1fr;
     }
     #join-form {
@@ -610,40 +566,26 @@ footer {
     display: flex;
     gap: 10px;
     justify-content: center;
-    flex-wrap: wrap;
-}
-
+    flex-wrap: wrap;}
 #countdown {
     color: var(--purple-light);
     font-weight: 700;
-    margin-top: 10px;
-}
-
-.filtre-btn,
-.btn-jaime {
+    margin-top: 10px;}
+.filtre-btn,.btn-jaime {
     padding: 10px 20px;
     border: 1px solid var(--purple);
     background: transparent;
     color: white;
     border-radius: 30px;
     cursor: pointer;
-    font-weight: 600;
-}
-
-.filtre-btn.actif,
-.btn-jaime.actif {
+    font-weight: 600;}
+.filtre-btn.actif,.btn-jaime.actif {
     background: var(--purple);
     color: white;
 }
-#join-form input.invalide,
-#join-form select.invalide,
-#join-form textarea.invalide {
+#join-form input.invalide,#join-form select.invalide,#join-form textarea.invalide {
     border: 2px solid #ff6b6b;
-    background: rgba(255, 107, 107, 0.08);
-}
-
-#join-form input.valide,
-#join-form select.valide,
-#join-form textarea.valide {
+    background: rgba(255, 107, 107, 0.08);}
+#join-form input.valide,#join-form select.valide,#join-form textarea.valide {
     border: 2px solid #4ecb71;
 }
