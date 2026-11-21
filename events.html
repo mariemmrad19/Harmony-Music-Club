@@ -1,111 +1,44 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Événements - Club de Musique HARMONY</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Découvrez les événements de HARMONY : concerts, scène ouverte et ateliers musicaux.">
+<link rel="icon" href="data:image/svg+xml,[STRIPPED]">
+<title>Événements - Club de Musique HARMONY</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">HARMONY</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="activities.html">Activités</a></li>
-                <li><a href="events.html">Événements</a></li>
-                <li><a href="join.html">Nous rejoindre</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="intro">
-            <p class="section-label">MUSIQUE, MOMENTS ET SOUVENIRS</p>
-            <h1>Nos événements</h1>
-            <p>
-                Découvrez nos prochains événements, profitez de spectacles
-                en direct, développez vos talents et partagez votre passion
-                pour la musique avec la communauté HARMONY.
-            </p>
-        </section>
-        <section id="upcoming-events">
-            <p class="section-label">NOTEZ LA DATE</p>
-            <h2>Événements à venir</h2>
-            <p id="countdown"></p>
-
+<header>
+<a href="index.html" class="logo">HARMONY</a>
+<button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+<nav id="main-nav"><ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="activities.html">Activités</a></li>
+<li><a href="events.html" class="active">Événements</a></li>
+<li><a href="join.html">Nous rejoindre</a></li>
+</ul></nav>
+</header>
+<main>
+<section id="intro"><p class="section-label">MUSIQUE, MOMENTS ET SOUVENIRS</p><h1>Nos événements</h1><p>Découvrez nos prochains événements, profitez de spectacles en direct, développez vos talents et partagez votre passion pour la musique avec la communauté HARMONY.</p></section>
+<section id="upcoming-events">
+<p class="section-label">NOTEZ LA DATE</p><h2>Événements à venir</h2><p id="countdown"></p>
 <div class="filtres">
-  <button class="filtre-btn actif" data-filtre="tous">Tous</button>
-  <button class="filtre-btn" data-filtre="Concert">Concert</button>
-  <button class="filtre-btn" data-filtre="Chant">Chant</button>
-  <button class="filtre-btn" data-filtre="Atelier">Atelier</button>
+<button class="filtre-btn actif" data-filtre="tous">Tous</button>
+<button class="filtre-btn" data-filtre="Concert">Concert</button>
+<button class="filtre-btn" data-filtre="Chant">Chant</button>
+<button class="filtre-btn" data-filtre="Atelier">Atelier</button>
 </div>
-            <div class="events-container">
-                <article data-categorie="Concert">
-                    <img src="images/music-night.jpg" alt="Concert de musique en direct">
-                    <h3>Soirée musicale</h3>
-                    <p>
-                        Profitez d'une soirée de musique en direct, de chant
-                        et de spectacles présentés par des passionnés de musique.
-                        Découvrez différents styles musicaux
-                        et partagez l'ambiance de la scène.
-                    </p>
-                    <p><strong>Date :</strong> 15 décembre 2026</p>
-                    <p><strong>Lieu :</strong> Club de Musique HARMONY</p>
-                    <p><strong>Catégorie :</strong> Concert</p>
-                    <a href="join.html">Participer</a>
-                </article>
-                <article data-categorie="Chant">
-                    <img src="images/open-mic.jpg" alt="Chanteur en pleine prestation">
-                    <h3>Scène ouverte</h3>
-                    <p>
-                        Prenez le micro et partagez votre talent.
-                        Chantez vos chansons préférées, gagnez en confiance
-                        et prenez plaisir à découvrir de nouvelles voix.
-                    </p>
-                    <p><strong>Date :</strong> 10 janvier 2027</p>
-                    <p><strong>Lieu :</strong> Club de Musique HARMONY</p>
-                    <p><strong>Catégorie :</strong> Chant</p>
-                    <a href="join.html">Participer</a>
-                </article>
-                <article data-categorie="Atelier">
-                    <img src="images/workshop-day.jpg" alt="Atelier de musique">
-                    <h3>Journée d'ateliers musicaux</h3>
-                    <p>
-                        Découvrez des instruments de musique, apprenez
-                        de nouvelles techniques et participez
-                        à des activités créatives en groupe.
-                    </p>
-                    <p><strong>Date :</strong> 5 février 2027</p>
-                    <p><strong>Lieu :</strong> Club de Musique HARMONY</p>
-                    <p><strong>Catégorie :</strong> Atelier</p>
-                    <a href="join.html">Participer</a>
-                </article>
-            </div>
-        </section>
-        <section id="past-events">
-            <p class="section-label">NOS SOUVENIRS</p>
-            <h2>Nos moments musicaux</h2>
-            <p>
-                Chaque expérience musicale rapproche les personnes.
-                Découvrez l'ambiance de nos activités
-                et les moments que nous partageons à travers la musique.
-            </p>
-            <img src="images/music-moments.jpg"
-                 alt="Spectacle musical de HARMONY">
-        </section>
-        <section id="join">
-            <p class="section-label">FAITES PARTIE DE L'AVENTURE</p>
-            <h2>Ne manquez pas notre prochain événement !</h2>
-            <p>
-                Rejoignez HARMONY, rencontrez d'autres passionnés de musique
-                et participez à nos expériences musicales.
-            </p>
-            <a href="join.html">Rejoindre notre club</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 HARMONY Club de Musique. Tous droits réservés.</p>
-    </footer>
-    <script src="js/script.js" defer></script>
+<div class="events-container">
+<article data-categorie="Concert"><img src="images/music-night.jpg" alt="Concert de musique en direct" loading="lazy"><h3>Soirée musicale</h3><p>Profitez d'une soirée de musique en direct, de chant et de spectacles présentés par des passionnés de musique. Découvrez différents styles musicaux et partagez l'ambiance de la scène.</p><p><strong>Date :</strong> 15 décembre 2026</p><p><strong>Lieu :</strong> Club de Musique HARMONY</p><p><strong>Catégorie :</strong> Concert</p><a href="join.html">Participer</a></article>
+<article data-categorie="Chant"><img src="images/open-mic.jpg" alt="Chanteur en pleine prestation" loading="lazy"><h3>Scène ouverte</h3><p>Prenez le micro et partagez votre talent. Chantez vos chansons préférées, gagnez en confiance et prenez plaisir à découvrir de nouvelles voix.</p><p><strong>Date :</strong> 10 janvier 2027</p><p><strong>Lieu :</strong> Club de Musique HARMONY</p><p><strong>Catégorie :</strong> Chant</p><a href="join.html">Participer</a></article>
+<article data-categorie="Atelier"><img src="images/workshop-day.jpg" alt="Atelier de musique" loading="lazy"><h3>Journée d'ateliers musicaux</h3><p>Découvrez des instruments de musique, apprenez de nouvelles techniques et participez à des activités créatives en groupe.</p><p><strong>Date :</strong> 5 février 2027</p><p><strong>Lieu :</strong> Club de Musique HARMONY</p><p><strong>Catégorie :</strong> Atelier</p><a href="join.html">Participer</a></article>
+</div>
+</section>
+<section id="past-events"><p class="section-label">NOS SOUVENIRS</p><h2>Nos moments musicaux</h2><p>Chaque expérience musicale rapproche les personnes. Découvrez l'ambiance de nos activités et les moments que nous partageons à travers la musique.</p><img src="images/music-moments.jpg" alt="Spectacle musical de HARMONY" loading="lazy"></section>
+<section id="join"><p class="section-label">FAITES PARTIE DE L'AVENTURE</p><h2>Ne manquez pas notre prochain événement !</h2><p>Rejoignez HARMONY, rencontrez d'autres passionnés de musique et participez à nos expériences musicales.</p><a href="join.html">Rejoindre notre club</a></section>
+</main>
+<footer><p>HARMONY - Club de Musique | Tunis, Tunisie</p><p><a href="mailto:contact@harmony.tn">contact@harmony.tn</a> | <a href="join.html">Nous rejoindre</a></p><p>&copy; 2026 HARMONY Club de Musique. Tous droits réservés.</p></footer>
+<script src="js/script.js" defer></script>
 </body>
 </html>

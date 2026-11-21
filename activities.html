@@ -1,118 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activités - Club de Musique HARMONY</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Découvrez les activités de HARMONY : instruments, chant, chorale, théorie et ateliers musicaux.">
+<link rel="icon" href="data:image/svg+xml,[STRIPPED]">
+<title>Activités - Club de Musique HARMONY</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="index.html" class="logo">HARMONY</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="activities.html">Activités</a></li>
-                <li><a href="events.html">Événements</a></li>
-                <li><a href="join.html">Nous rejoindre</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="intro">
-            <p class="section-label">EXPLOREZ VOTRE PASSION</p>
-            <h1>Nos activités</h1>
-            <p>
-                Découvrez de nouvelles compétences musicales, exprimez votre créativité
-                et prenez plaisir à apprendre avec d'autres passionnés de musique.
-                Chez HARMONY, chacun trouve sa place, des débutants
-                aux musiciens expérimentés.
-            </p>
-        </section>
-        <section id="lessons">
-            <p class="section-label">APPRENEZ QUELQUE CHOSE DE NOUVEAU</p>
-            <h2>Cours de musique</h2>
-            <div class="activities-container">
-                <article>
-                    <img src="images/piano.jpg" alt="Cours de piano">
-                    <h3>Cours d'instruments</h3>
-                    <p>
-                        Découvrez des instruments tels que le piano, le violon
-                        et la guitare. Apprenez les techniques de base, pratiquez
-                        des mélodies et améliorez votre jeu étape par étape.
-                    </p>
-                </article>
-                <article>
-                    <img src="images/workshop.jpg" alt="Notes de musique">
-                    <h3>Théorie musicale</h3>
-                    <p>
-                        Apprenez à reconnaître les notes de musique, à comprendre
-                        le rythme et à lire des partitions musicales simples.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <section id="singing">
-            <p class="section-label">TROUVEZ VOTRE VOIX</p>
-            <h2>Chant</h2>
-            <div class="activities-container">
-                <article>
-                    <img src="images/Singing.png" alt="Chanteur en pleine prestation">
-                    <h3>Chant individuel</h3>
-                    <p>
-                        Développez votre voix grâce à des exercices vocaux,
-                        améliorez votre respiration et interprétez
-                        les chansons que vous aimez.
-                    </p>
-                </article>
-                <article>
-                    <img src="images/Choir.jpg" alt="Groupe de chanteurs">
-                    <h3>Chorale</h3>
-                    <p>
-                        Chantez avec les autres membres, apprenez à suivre
-                        le rythme et découvrez le plaisir de créer
-                        de la musique ensemble.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <section id="workshops">
-            <p class="section-label">CRÉEZ ET COLLABOREZ</p>
-            <h2>Ateliers musicaux</h2>
-            <div class="activities-container">
-                <article>
-                    <img src="images/workshop.jpg" alt="Atelier musical créatif">
-                    <h3>Ateliers créatifs</h3>
-                    <p>
-                        Participez à des activités de groupe, explorez
-                        des idées musicales et travaillez avec les autres membres
-                        sur des projets créatifs.
-                    </p>
-                </article>
-                <article>
-                    <img src="images/piano.jpg" alt="Pratique musicale">
-                    <h3>Pratique en groupe</h3>
-                    <p>
-                        Entraînez-vous ensemble, échangez des conseils,
-                        améliorez vos compétences musicales et préparez-vous
-                        aux prochaines représentations.
-                    </p>
-                </article>
-            </div>
-        </section>
-        <section id="join">
-            <p class="section-label">COMMENCEZ VOTRE AVENTURE MUSICALE</p>
-            <h2>Trouvez votre place chez HARMONY</h2>
-            <p>
-                Choisissez l'activité que vous aimez, rencontrez de nouvelles personnes
-                et faites partie de notre communauté musicale.
-            </p>
-            <a href="join.html">Rejoindre notre club</a>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 HARMONY Club de Musique. Tous droits réservés.</p>
-    </footer>
-    <script src="js/script.js" defer></script>
+<header>
+<a href="index.html" class="logo">HARMONY</a>
+<button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+<nav id="main-nav"><ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="activities.html" class="active">Activités</a></li>
+<li><a href="events.html">Événements</a></li>
+<li><a href="join.html">Nous rejoindre</a></li>
+</ul></nav>
+</header>
+<main>
+<section id="intro"><p class="section-label">EXPLOREZ VOTRE PASSION</p><h1>Nos activités</h1><p>Découvrez de nouvelles compétences musicales, exprimez votre créativité et prenez plaisir à apprendre avec d'autres passionnés de musique. Chez HARMONY, chacun trouve sa place, des débutants aux musiciens expérimentés.</p></section>
+<section id="lessons"><p class="section-label">APPRENEZ QUELQUE CHOSE DE NOUVEAU</p><h2>Cours de musique</h2><div class="activities-container">
+<article><img src="images/piano.jpg" alt="Cours de piano" loading="lazy"><h3>Cours d'instruments</h3><p>Découvrez des instruments tels que le piano, le violon et la guitare. Apprenez les techniques de base, pratiquez des mélodies et améliorez votre jeu étape par étape.</p></article>
+<article><img src="images/workshop.jpg" alt="Notes de musique" loading="lazy"><h3>Théorie musicale</h3><p>Apprenez à reconnaître les notes de musique, à comprendre le rythme et à lire des partitions musicales simples.</p></article>
+</div></section>
+<section id="singing"><p class="section-label">TROUVEZ VOTRE VOIX</p><h2>Chant</h2><div class="activities-container">
+<article><img src="images/singing.jpg" alt="Chanteur en pleine prestation" loading="lazy"><h3>Chant individuel</h3><p>Développez votre voix grâce à des exercices vocaux, améliorez votre respiration et interprétez les chansons que vous aimez.</p></article>
+<article><img src="images/choir.jpg" alt="Groupe de chanteurs" loading="lazy"><h3>Chorale</h3><p>Chantez avec les autres membres, apprenez à suivre le rythme et découvrez le plaisir de créer de la musique ensemble.</p></article>
+</div></section>
+<section id="workshops"><p class="section-label">CRÉEZ ET COLLABOREZ</p><h2>Ateliers musicaux</h2><div class="activities-container">
+<article><img src="images/workshop.jpg" alt="Atelier musical créatif" loading="lazy"><h3>Ateliers créatifs</h3><p>Participez à des activités de groupe, explorez des idées musicales et travaillez avec les autres membres sur des projets créatifs.</p></article>
+<article><img src="images/piano.jpg" alt="Pratique musicale" loading="lazy"><h3>Pratique en groupe</h3><p>Entraînez-vous ensemble, échangez des conseils, améliorez vos compétences musicales et préparez-vous aux prochaines représentations.</p></article>
+</div></section>
+<section id="join"><p class="section-label">COMMENCEZ VOTRE AVENTURE MUSICALE</p><h2>Trouvez votre place chez HARMONY</h2><p>Choisissez l'activité que vous aimez, rencontrez de nouvelles personnes et faites partie de notre communauté musicale.</p><a href="join.html">Rejoindre notre club</a></section>
+</main>
+<footer><p>HARMONY - Club de Musique | Tunis, Tunisie</p><p><a href="mailto:contact@harmony.tn">contact@harmony.tn</a> | <a href="join.html">Nous rejoindre</a></p><p>&copy; 2026 HARMONY Club de Musique. Tous droits réservés.</p></footer>
+<script src="js/script.js" defer></script>
 </body>
 </html>
