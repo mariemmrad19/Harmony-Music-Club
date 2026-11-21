@@ -33,9 +33,18 @@
             <p>Parlez-nous de vous, de vos intérêts musicaux et de ce que vous aimeriez découvrir chez HARMONY.</p>
             <form id="join-form" novalidate>
                 <h3>1. Informations personnelles</h3>
-                <div><label for="fullname">Nom et prénom</label><input type="text" id="fullname" name="fullname" placeholder="Entrez votre nom et prénom" required></div>
-                <div><label for="email">Adresse e-mail</label><input type="email" id="email" name="email" placeholder="exemple@email.com" required></div>
-                <div><label for="phone">Numéro de téléphone (facultatif)</label><input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone"></div>
+                <div>
+                    <label for="fullname">Nom et prénom</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Entrez votre nom et prénom" required>
+                </div>
+                <div>
+                    <label for="email">Adresse e-mail</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+                </div>
+                <div>
+                    <label for="phone">Numéro de téléphone (facultatif)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro de téléphone">
+                </div>
                 <div>
                     <label for="age">Tranche d'âge</label>
                     <select id="age" name="age" required>
@@ -49,13 +58,20 @@
                 <h3>2. Vos intérêts musicaux</h3>
                 <p>Quelles activités souhaitez-vous rejoindre ? Vous pouvez choisir plusieurs réponses.</p>
                 <div class="choice-group">
-                    <label><input type="checkbox" name="activities" value="Instrument Lessons"> Cours d'instruments</label>
-                    <label><input type="checkbox" name="activities" value="Solo Singing"> Chant en solo</label>
-                    <label><input type="checkbox" name="activities" value="Choir"> Chorale</label>
-                    <label><input type="checkbox" name="activities" value="Music Theory"> Théorie musicale</label>
-                    <label><input type="checkbox" name="activities" value="Music Workshops"> Ateliers musicaux</label>
-                    <label><input type="checkbox" name="activities" value="Group Practice"> Pratique en groupe</label>
-                    <label><input type="checkbox" name="activities" value="Live Performances"> Spectacles en direct</label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Instrument Lessons"> Cours d'instruments</label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Solo Singing"> Chant en solo</label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Choir"> Chorale</label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Music Theory"> Théorie musicale</label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Music Workshops"> Ateliers musicaux</label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Group Practice"> Pratique en groupe</label>
+                    <label>
+                        <input type="checkbox" name="activities" value="Live Performances"> Spectacles en direct</label>
                 </div>
                 <div>
                     <label for="instrument">Quel instrument vous intéresse ?</label>
@@ -137,8 +153,14 @@
                     </select>
                 </div>
                 <h3>5. Parlez-nous davantage de vous</h3>
-                <div><label for="reason">Pourquoi souhaitez-vous rejoindre HARMONY ?</label><textarea id="reason" name="reason" rows="5" placeholder="Parlez-nous de votre passion pour la musique et de votre motivation..." required></textarea></div>
-                <div><label for="suggestions">Avez-vous des idées ou des suggestions pour le club ?</label><textarea id="suggestions" name="suggestions" rows="4" placeholder="Partagez vos idées avec nous..."></textarea></div>
+                <div>
+                    <label for="reason">Pourquoi souhaitez-vous rejoindre HARMONY ?</label>
+                    <textarea id="reason" name="reason" rows="5" placeholder="Parlez-nous de votre passion pour la musique et de votre motivation..." required></textarea>
+                </div>
+                <div>
+                    <label for="suggestions">Avez-vous des idées ou des suggestions pour le club ?</label>
+                    <textarea id="suggestions" name="suggestions" rows="4" placeholder="Partagez vos idées avec nous..."></textarea>
+                </div>
                 <div class="agreement">
                     <input type="checkbox" id="agreement" name="agreement" required>
                     <label for="agreement">Je confirme que les informations fournies sont exactes.</label>

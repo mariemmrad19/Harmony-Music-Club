@@ -1,4 +1,3 @@
-// Menu burger
 const burger = document.querySelector(".burger");
 const nav = document.querySelector("#main-nav");
 if (burger && nav) {
@@ -18,13 +17,11 @@ if (burger && nav) {
         });
     });
 }
-
 const evenements = [
     { nom: "Soiree musicale", date: "2026-12-15" },
     { nom: "Scene ouverte", date: "2027-01-10" },
     { nom: "Journee d'ateliers", date: "2027-02-05" }
 ];
-
 const countdownEl = document.querySelector("#countdown");
 if (countdownEl) {
     const prochain = new Date("2026-12-15");
@@ -33,7 +30,6 @@ if (countdownEl) {
     const jours = Math.floor(diff / 86400000);
     countdownEl.textContent = "Plus que " + jours + " jours avant la Soiree musicale.";
 }
-
 const boutonsFiltre = document.querySelectorAll(".filtre-btn");
 const cartesEvents = document.querySelectorAll(".events-container article");
 boutonsFiltre.forEach((btn) => {
@@ -51,7 +47,6 @@ boutonsFiltre.forEach((btn) => {
         });
     });
 });
-
 const boutonsJaime = document.querySelectorAll(".btn-jaime");
 boutonsJaime.forEach((btn) => {
     let compteur = 0;
@@ -61,7 +56,6 @@ boutonsJaime.forEach((btn) => {
         btn.classList.toggle("actif");
     });
 });
-
 const instrumentSelect = document.querySelector("#instrument");
 const autreDiv = document.querySelector("#autre-div");
 if (instrumentSelect) {
@@ -73,7 +67,6 @@ if (instrumentSelect) {
         }
     });
 }
-
 const form = document.querySelector("#join-form");
 const message = document.querySelector("#form-message");
 if (form) {
@@ -146,7 +139,6 @@ if (heroLabel) {
         heroLabel.textContent = "BONSOIR - BIENVENUE CHEZ HARMONY";
     }
 }
-
 const champs = document.querySelectorAll("#join-form input, #join-form select, #join-form textarea");
 champs.forEach((champ) => {
     champ.addEventListener("focusout", () => {
