@@ -1,25 +1,49 @@
-# HARMONY - Club de Musique
-Mini-projet Dev Web côté client - TI1 - Semestre 1 - A.U. 2026/2027
-Enseignante : Dr. Ing. Salma DAOUD
-## 1. Thème du projet
-Site web pour un club de musique : découvrir les activités du club, les événements à venir et rejoindre le club via un formulaire d'inscription.
-## 2. Pages du site
-- `index.html` : Page d'accueil - Présentation du club, hero, activités en avant
-- `activities.html` : Activités - Chant, Guitare, Piano, Batterie avec filtre
-- `events.html` : Événements - Concerts et ateliers avec compte à rebours
-- `join.html` : Nous rejoindre - Formulaire d'inscription complet avec validation
+# HARMONY - Club de Musique - Site Web
+
+## 1. Présentation du projet
+
+HARMONY est un site web d'un club de musique qui permet de découvrir les activités du club, les événements à venir et de rejoindre le club.
+
+Ce projet a été réalisé dans le cadre d'un atelier de développement web.
+
+## Voir le site en ligne
+
+[Ouvrir le site HARMONY](https://mariemmrad19.github.io/harmony-music-club/)
+
+## Voir le code index.html
+
+[index.html](https://github.com/mariemmrad19/Harmony-Music-Club/blob/main/index.html)
+
+## 2. Objectifs du projet
+
+- Créer un site web simple et attractif.
+- Présenter le club et ses activités.
+- Afficher les événements du club.
+- Permettre aux visiteurs de rejoindre le club via un formulaire.
+
 ## 3. Technologies utilisées
-- **HTML5** : Structure sémantique (header, nav, main, section, article, footer)
-- **CSS3** : Fichier externe `css/style.css`, variables CSS, Grid, Flexbox, media queries, menu burger responsive
-- **JavaScript** : Fichier externe `js/script.js`, DOM, événements, validation de formulaire, filtre des activités, bouton J'aime, compte à rebours, hero dynamique selon l'heure
+
+- **HTML5** : structure des pages web.
+- **CSS3** : mise en forme et design.
+- **JavaScript** : validation des formulaires.
+
 ## 4. Fonctionnalités
-- Menu burger responsive pour mobile
-- Filtre des activités par catégorie (Tous, Chant, Guitare, Piano, Batterie)
-- Compte à rebours pour le prochain concert
-- Bouton J'aime sur les activités
-- Formulaire avec validation : nom, email, âge, instrument, expérience, raison, accord
-- Champ "Autre instrument" qui apparaît quand on choisit Autre
-- Message de bienvenue dynamique selon l'heure dans l'accueil
+
+- Page d'accueil.
+- Page des activités.
+- Page des événements.
+- Page Nous rejoindre.
+- Validation des champs du formulaire.
+- Vérification de l'adresse e-mail.
+- Vérification de l'âge.
+- Filtre des activités par catégorie.
+- Compte à rebours pour le prochain concert.
+- Bouton J'aime sur les activités.
+- Changement de couleur des champs :
+    - Rouge : champ invalide.
+    - Vert : champ valide.
+- Message de bienvenue dynamique selon l'heure.
+
 ## 5. Organisation des fichiers
 Harmony-Music-Club/
 ├── index.html
@@ -34,6 +58,8 @@ Harmony-Music-Club/
 ├── images/
 ├── audio/
 └── videos/
-## 6. Membre
-Mariem Mrad - IT 17 - Groupe 2
-GitHub : https://github.com/mariemmrad19
+## 6. Auteur
+
+Projet réalisé par : Mariem Mrad / IT17 grp 2
+
+Année universitaire : 2026-2027
